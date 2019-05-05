@@ -6,7 +6,6 @@
  * you may not use this file except in compliance with the License. You may obtain a copy
  * of the License at http://www.apache.org/licenses/LICENSE-2.0
  */
-
 namespace AdobeStock\Api\Models;
 
 class LicenseMemberInfo
@@ -15,7 +14,6 @@ class LicenseMemberInfo
      * @var string User's Adobe Stock member identifier.
      */
     public $stock_id;
-
     /**
      * Constructor
      * @param array $response
@@ -24,26 +22,24 @@ class LicenseMemberInfo
     {
         foreach ($response as $key => $val) {
             if (property_exists($this, $key)) {
-                $this->$key = $val;
+                $this->{$key} = $val;
             }
         }
     }
-
     /**
      * Get user's Adobe Stock member identifier.
      * @return string
      */
-    public function getStockId(): string
+    public function getStockId()
     {
         return $this->stock_id;
     }
-
     /**
      * Sets Adobe Stock member identifier.
      * @param string $val
      * @return LicenseMemberInfo
      */
-    public function setStockId(string $val) : LicenseMemberInfo
+    public function setStockId($val)
     {
         $this->stock_id = $val;
         return $this;

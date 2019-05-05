@@ -3,7 +3,7 @@
     "description": "Adobe Stock API library",
     "license": "Apache-2.0",
     "require": {
-        "php": "~7.1",
+        "php": "~5.6",
         "guzzlehttp/guzzle": "~6.0",
         "ext-imagick": "*"
     },

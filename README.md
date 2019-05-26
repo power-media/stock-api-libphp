@@ -1,5 +1,10 @@
 # Stock API libphp
 
+## Fork information
+This library has been forked to convert it to PHP 5 compatible.
+Please use branch `php5-compatible` if you need it running on PHP 5.4+.
+
+
 ## Overview
 This is a PHP implementation of the various APIs provided by the Stock services. Adobe Stock APIs are available [here](https://www.adobe.io/apis/creativecloud/stock/docs/getting-started.html)
 
